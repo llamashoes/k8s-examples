@@ -1,0 +1,7 @@
+{
+  "external": true,
+  "name": "taser",
+  "image": "taser",
+  "command": ["-c", "while true;do echo \"Dont tase me bro\";sleep 100;done"],
+  "ports": [ { "containerPort": 8080, "hostPort": 8080 } ]
+}

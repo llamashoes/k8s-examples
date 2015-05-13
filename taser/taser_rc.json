@@ -1,0 +1,24 @@
+{
+  "id": "taser-controller",
+  "kind": "ReplicationController",
+  "apiVersion": "v1beta1",
+  "desiredState": {
+    "replicas": 1,
+    "replicaSelector": {"name": "taser"},
+    "podTemplate": {
+      "desiredState": {
+        "manifest": {
+          "version": "v1beta1",
+          "id": "taserController",
+          "containers": [{
+            "name": "taser",
+            "image": "llamashoes/taser",
+            "command": ["-c", "while true;do echo \"Dont tase me bro\";sleep 100;done"],
+            "ports": [{"containerPort": 8080, "hostPort": 8080}]
+          }]
+        }
+      },
+      "labels": {"name": "taser"}
+    }},
+  "labels": {"name": "taser"}
+}

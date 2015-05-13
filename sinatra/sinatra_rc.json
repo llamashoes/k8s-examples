@@ -1,0 +1,23 @@
+{
+  "id": "sinatra-controller",
+  "kind": "ReplicationController",
+  "apiVersion": "v1beta1",
+  "desiredState": {
+    "replicas": 1,
+    "replicaSelector": {"name": "sinatra"},
+    "podTemplate": {
+      "desiredState": {
+        "manifest": {
+          "version": "v1beta1",
+          "id": "sinatraController",
+          "containers": [{
+            "name": "taser",
+            "image": "llamashoes/docker-sinatra",
+            "ports": [{"containerPort": 4567, "hostPort": 4567}]
+          }]
+        }
+      },
+      "labels": {"name": "sinatra"}
+    }},
+  "labels": {"name": "sinatra"}
+}

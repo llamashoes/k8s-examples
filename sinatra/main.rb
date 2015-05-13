@@ -4,6 +4,5 @@ require 'sinatra'
 set :environment, :production
 
 get '/hi' do
-  h = `HOSTNAME`
-  "Hello World! - from #{h.strip}"
+  "Hello World!"
 end

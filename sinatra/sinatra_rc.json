@@ -11,7 +11,7 @@
           "version": "v1beta1",
           "id": "sinatraController",
           "containers": [{
-            "name": "taser",
+            "name": "sinatra",
             "image": "llamashoes/k8s-example-sinatra",
             "ports": [{"containerPort": 4567, "hostPort": 4567}]
           }]

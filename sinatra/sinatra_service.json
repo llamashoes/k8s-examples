@@ -1,0 +1,12 @@
+{
+  "id": "sinatra",
+  "kind": "Service",
+  "apiVersion": "v1beta1",
+  "selector": {
+    "name": "sinatra"
+  },
+  "containerPort": 4567,
+  "protocol": "TCP",
+  "port": 80,
+  "createExternalLoadBalancer": true
+}

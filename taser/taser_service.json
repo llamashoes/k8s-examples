@@ -1,0 +1,11 @@
+{
+  "id": "taser",
+  "kind": "Service",
+  "apiVersion": "v1beta1",
+  "selector": {
+    "name": "taser"
+  },
+  "containerPort": 8080,
+  "protocol": "TCP",
+  "port": 8081
+}

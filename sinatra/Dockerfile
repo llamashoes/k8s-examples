@@ -1,3 +1,3 @@
 FROM llamashoes/docker-sinatra
 ADD main.rb /main.rb
-CMD “ruby /main.rb”
+ENTRYPOINT ["ruby", "/main.rb"]

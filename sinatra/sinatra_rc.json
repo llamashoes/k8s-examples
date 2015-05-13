@@ -12,7 +12,7 @@
           "id": "sinatraController",
           "containers": [{
             "name": "taser",
-            "image": "llamashoes/docker-sinatra",
+            "image": "llamashoes/k8s-example-sinatra",
             "ports": [{"containerPort": 4567, "hostPort": 4567}]
           }]
         }

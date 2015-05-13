@@ -12,8 +12,7 @@
           "id": "taserController",
           "containers": [{
             "name": "taser",
-            "image": "llamashoes/taser",
-            "command": ["-c", "while true;do echo \"Dont tase me bro\";sleep 100;done"],
+            "image": "llamashoes/k8s-examples-taser",
             "ports": [{"containerPort": 8080, "hostPort": 8080}]
           }]
         }
